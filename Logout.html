@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Logout</title>
+</head>
+
+<body>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="Home.html">MEAN2020 Demos</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="loginOut" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Signup.html">Signup <span class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="p-5 flex-shrink-0">
+        <div class="container">
+            <h1 class="m-5 d-flex justify-content-center " id="helloMsg">You're logged out</h1>
+        </div>
+    </main>
+
+
+    <script src="js/code.js"></script>
+    <script>
+        createCookie("MEAN2020Data", "");
+        createCookie("MEAN2020DataUser", "");
+        window.location = 'Index.html'
+    </script>
+</body>
+
+</html>
